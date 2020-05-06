@@ -28,7 +28,6 @@ flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
 FLAGS = flags.FLAGS
 
 LABEL_ENCODINGS = {
-    "no_wheat_head": 2,
     "wheat_head": 1
 }
 

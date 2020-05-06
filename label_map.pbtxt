@@ -1,8 +1,4 @@
 item {
-	id: 2
-	name: 'no_wheat_head'
-}
-item {
 	id: 1
 	name: 'wheat_head'
 }
