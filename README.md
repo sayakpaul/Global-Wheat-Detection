@@ -71,6 +71,10 @@ The files that you don't see here in the directory were not intentionally provid
 ## Steps to reproduce the results
 - Follow the instructions from `Data_Prep.ipynb` notebook. 
 - Once the new training and validation splits are generated run `generate_tfrecord.py` script for generating the TFRecords. 
+- Download the pre-trained checkpoints of Faster RCNN with Inception Network as base by running:
+  ```
+  wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+  ```
 - Follow instructions from [this piece](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_pets.md) on how to package an object detection application in TensorFlow Object Detection API and submit a training job to AI Platform. It also shows how to monitor performance with TensorBoard and export the trained model checkpoints as a frozen inference graph. 
 
 This project uses GCS buckets for storing intermediate training checkpoints along with all the other files necessary to run a TFOD API model on AI Platform. Following are the initial files from my GCS bucket:
