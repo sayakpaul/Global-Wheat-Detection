@@ -68,6 +68,12 @@ The files that you don't see here in the directory were not intentionally provid
 
 ## Results
 
+Following are the results I got from TensorBoard while my model was training (following are images from the validation set I prepared):
+
+![](https://i.ibb.co/8Y3fXHF/Screen-Shot-2020-05-06-at-11-17-36-PM.png)
+
+![](https://i.ibb.co/4V4B4ZQ/Screen-Shot-2020-05-06-at-11-18-03-PM.png)
+
 ## Steps to reproduce the results
 - Follow the instructions from `Data_Prep.ipynb` notebook. 
 - Once the new training and validation splits are generated run `generate_tfrecord.py` script for generating the TFRecords. 
