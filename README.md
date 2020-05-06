@@ -79,7 +79,7 @@ The files that you don't see here in the directory were not intentionally provid
 
 This project uses GCS buckets for storing intermediate training checkpoints along with all the other files necessary to run a TFOD API model on AI Platform. Following are the initial files from my GCS bucket:
 ```
-$ gsutil ls gs://global_wheat_detection/data
+$ gsutil ls gs://global_wd_faster_rcnn/data
 gs://global_wheat_detection/data/label_map.pbtxt
 gs://global_wheat_detection/data/model.ckpt.data-00000-of-00001
 gs://global_wheat_detection/data/model.ckpt.index
