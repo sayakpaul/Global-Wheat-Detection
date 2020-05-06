@@ -28,7 +28,26 @@ This is an object detection task and the project uses [TensorFlow Object Detecti
 ## About the files & directories
 ```
 ├── faster_rcnn_inception_v2_coco_2018_01_28: Contains the pre-trained checkpoints and frozen inference graph.
+│   ├── saved_model
+│   │   ├── variables
+│   │   └── saved_model.pb
+│   ├── checkpoint
+│   ├── frozen_inference_graph.pb
+│   ├── model.ckpt.data-00000-of-00001
+│   ├── model.ckpt.index
+│   ├── model.ckpt.meta
+│   └── pipeline.config
 ├── test: Contains the test images of the competition. 
+│   ├── 2fd875eaa.jpg
+│   ├── 348a992bb.jpg
+│   ├── 51b3e36ab.jpg
+│   ├── 51f1be19e.jpg
+│   ├── 53f253011.jpg
+│   ├── 796707dd7.jpg
+│   ├── aac893a91.jpg
+│   ├── cb8d261a3.jpg
+│   ├── cc3532ff6.jpg
+│   └── f5a1f0358.jpg
 ├── train: Contains the training images of the competition. 
 ├── Basic_EDA.ipynb: Performs basic data visualization on the provided dataset.
 ├── Data_Prep.ipynb: Prepares the data in a TFOD API compatible format.
