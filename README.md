@@ -27,7 +27,7 @@ This is an object detection task and the project uses [TensorFlow Object Detecti
 
 ## About the files & directories
 ```
-├── faster_rcnn_inception_v2_coco_2018_01_28: Contains the pre-trained checkpoints and frozen inference graph.
+├── faster_rcnn_resnet101_coco_11_06_2017: Contains the pre-trained checkpoints and frozen inference graph.
 │   ├── saved_model
 │   │   ├── variables
 │   │   └── saved_model.pb
@@ -51,7 +51,7 @@ This is an object detection task and the project uses [TensorFlow Object Detecti
 ├── train: Contains the training images of the competition. 
 ├── Basic_EDA.ipynb: Performs basic data visualization on the provided dataset.
 ├── Data_Prep.ipynb: Prepares the data in a TFOD API compatible format.
-├── faster_rcnn_inception_v2_coco.config: Training configuration file.
+├── faster_rcnn_resnet101_pets.config: Training configuration file.
 ├── generate_tfrecord.py: Utility script for generating TFRecords from `.csv` files.
 ├── label_map.pbtxt: Label map file.
 ├── new_train_df.csv: The newly created partial training set.
@@ -73,7 +73,7 @@ The files that you don't see here in the directory were not intentionally provid
 - Once the new training and validation splits are generated run `generate_tfrecord.py` script for generating the TFRecords. 
 - Download the pre-trained checkpoints of Faster RCNN with Inception Network as base by running:
   ```
-  wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_v2_coco_2018_01_28.tar.gz
+  wget http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_2018_01_28.tar.gz
   ```
 - Follow instructions from [this piece](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_pets.md) on how to package an object detection application in TensorFlow Object Detection API and submit a training job to AI Platform. It also shows how to monitor performance with TensorBoard and export the trained model checkpoints as a frozen inference graph. 
 
@@ -84,7 +84,7 @@ gs://global_wheat_detection/data/label_map.pbtxt
 gs://global_wheat_detection/data/model.ckpt.data-00000-of-00001
 gs://global_wheat_detection/data/model.ckpt.index
 gs://global_wheat_detection/data/model.ckpt.meta
-gs://global_wheat_detection/data/ssd_mobilenet_v1_0.75_depth_quantized_300x300_pets_sync.config
+gs://global_wheat_detection/data/faster_rcnn_resnet101_pets.config
 gs://global_wheat_detection/data/train.record
 gs://global_wheat_detection/data/valid.record
 ```
