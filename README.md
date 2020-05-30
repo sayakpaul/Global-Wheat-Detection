@@ -97,5 +97,6 @@ gs://global_wheat_detection/data/valid.record
 
 ## Acknowledgement
 - ML-GDE program for granting me GCP credits.
+- TensorFlow Research Cloud.
 
 The project extensively uses GCP's AI offerings such as AI Platform. Specifically, I used AI Platform Notebooks and AI Platform Jobs. For storage, I used GCS buckets. 
